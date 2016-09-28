@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>My notes</title>
-    <script src="src/note-model.js"></script>
-    <script src="src/myNotes.js"></script>
-    <script src="Interface.js"></script>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./public/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -37,11 +35,15 @@
       <div class ="hidden" id="add_note">
         <h1>Add new note</h1>
         <textarea class="form-control" rows="5" id="a_note"></textarea>
-        <button id="submit_button" type="button" onclick="createNoteOnClick()">Create</button>'
+        <button id="submit_button" type="button" onclick="mQuery.createNoteOnClick()">Create</button>'
       </div>
 
       <div id="list_of_notes"></div>
       <div id="note_content"></div>
     </div>
+    <script src="mQuery.js"></script>
+    <script src="src/note-model.js"></script>
+    <script src="src/myNotes.js"></script>
+    <script src="Interface.js"></script>
   </body>
 </html>
